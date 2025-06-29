@@ -1,0 +1,109 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+# Publish rules
+
+Use
+
+# Publish Branch Rules
+
+## Pre-publish Checklist
+
+1. **Feature Name Verification**
+
+   - If no feature name is provided in the conversation, ask the user for a feature name
+   - Feature name should be in kebab-case format (e.g., `add-weapon-traits`)
+   - This will be used as part of the branch name
+
+2. **Data File Validation**
+
+   - Verify all JSON files in `data/` directory are valid JSON format
+   - Check for required fields based on file type:
+     - traits.json: name, description, effects
+     - unique-weapons.json: name, type, rarity, effects
+
+3. **README Update**
+   - Update the README.md with a table of available data files
+   - Each entry should include:
+     - Relative URL to the file
+     - Brief description of the file's contents
+     - Last updated date
+   - Format:
+     | File | Description | Last Updated |
+     |------|-------------|--------------|
+     | [traits.json](mdc:data/traits.json) | Character traits and perks | YYYY-MM-DD |
+
+## Commit Message Rules
+
+1. **Conventional Commit Format**
+
+   ```
+   <type>(<scope>): <description>
+
+   [optional body]
+
+   [optional footer]
+   ```
+
+2. **Type Categories**
+
+   - feat: New features or significant additions
+   - fix: Bug fixes
+   - docs: Documentation changes
+   - style: Formatting changes
+   - refactor: Code restructuring without behavior change
+   - test: Adding or modifying tests
+   - chore: Maintenance tasks
+
+3. **Scope Guidelines**
+
+   - traits: Changes to traits.json
+   - weapons: Changes to unique-weapons.json
+   - docs: Documentation updates
+   - multiple: When changes affect multiple components
+
+4. **Description Rules**
+
+   - Use imperative mood ("add" not "added")
+   - Keep under 72 characters
+   - No period at the end
+   - Start with lowercase
+
+5. **Body Guidelines**
+
+   - Use when additional context is needed
+   - Explain what and why vs. how
+   - Wrap at 72 characters
+   - Use blank line to separate from subject
+
+6. **Footer Rules**
+   - Reference issues: "Closes #123"
+   - Breaking changes: "BREAKING CHANGE: description"
+   - Multiple footers separated by blank lines
+
+## Example Commit Messages
+
+```
+feat(traits): add elemental resistance traits
+
+Add new traits for fire, ice, and lightning resistance
+with corresponding effect multipliers
+
+Closes #45
+```
+
+```
+fix(weapons): correct damage calculation for unique weapons
+
+BREAKING CHANGE: damage formula now includes critical hit modifier
+```
+
+## Post-publish Actions
+
+1. Verify README.md is updated with all current data files
+2. Ensure all JSON files are properly formatted
+3. Check for any unintended file changes
+4. Review commit message follows conventional commit format
