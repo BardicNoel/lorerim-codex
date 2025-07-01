@@ -1,0 +1,620 @@
+traits:
+  - name: "Acoustic Arcanist"
+    tags: [magic, social, debuff]
+    description: "Your magic flows through melody and vibration. After playing an instrument at an inn, your sonic spells become 20% more powerful. However, your booming presence makes hiring followers more expensive, and your reliance on sound magic weakens your physical attacks by 15%."
+    effects:
+      - {
+          type: spell_power,
+          scope: sonic,
+          value: "+20%",
+          condition: "after playing instrument",
+        }
+      - { type: follower_cost, value: "increased" }
+      - { type: physical_damage_dealt, value: "-15%" }
+
+  - name: "Adrenaline Rush"
+    tags: [combat, survival, movement, debuff]
+    description: "You possess a natural flight response. When at less than 20% health, you move 20% faster and regenerate 1 stamina per second but also deal 30% less damage when below this threshold."
+    effects:
+      - { type: move_speed, value: "+20%", condition: "20% health" }
+      - { type: stamina_regen, value: "+1/sec", condition: "20% health" }
+      - { type: damage_dealt, value: "-30%", condition: "20% health" }
+
+  - name: "Angler"
+    tags: [utility, combat, summon]
+    description: "Your bond with the sea grants unique benefits. Mudcrabs and slaughterfish become friendly toward you. Fishing yields more valuable items. Fishing rods deal double damage and have a chance to summon a mudcrab to fight at your side. The summoned mudcrab becomes stronger if you're carrying an insect or small fish. Fishing rods can be enchanted. However, your affinity with the waters leaves you 10% more vulnerable to shock damage."
+    effects:
+      - {
+          type: creature_relation,
+          scope: [mudcrab, slaughterfish],
+          value: "friendly",
+        }
+      - { type: fishing_loot, value: "increased" }
+      - { type: weapon_damage, scope: fishing_rod, value: "x2" }
+      - {
+          type: summon_chance,
+          scope: mudcrab,
+          value: "on hit",
+          condition: "with fishing rod",
+        }
+      - {
+          type: summon_power,
+          scope: mudcrab,
+          value: "increased",
+          condition: "carrying insects/fish",
+        }
+      - { type: weapon_enchanting, scope: fishing_rod, value: "enabled" }
+      - { type: magic_weakness, scope: shock, value: "+10%" }
+
+  - name: "Au Naturel"
+    tags: [attribute_bonus, scaling, defense]
+    description: "Embrace your divine gifts! Start with +100 health, magicka, and stamina. For each piece of armor or clothing you wear, you lose 40 from each attribute (up to a maximum loss of -160 with four pieces equipped). Additionally, you gain +1 to health, magicka, and stamina per level for each empty armor slot (head, chest, hands, and feet)."
+    effects:
+      - {
+          type: attribute_bonus,
+          scope: [health, magicka, stamina],
+          value: "+100",
+        }
+      - {
+          type: attribute_penalty,
+          scope: [health, magicka, stamina],
+          value: "-40 per piece",
+          max: "-160",
+        }
+      - {
+          type: attribute_per_level,
+          scope: [health, magicka, stamina],
+          value: "+1 per empty armor slot",
+        }
+
+  - name: "Bad Natured"
+    tags: [stealth, combat, debuff, divine_penalty]
+    description: "You were born into wickedness. Your attacks while being crouched deals 20% more and you're better at pickpocketing. However, attacks while standing up do 20% less and wearing a divine amulet will hurt you."
+    effects:
+      - { type: damage_dealt, value: "+20%", condition: "while crouched" }
+      - { type: pickpocket_success, value: "increased" }
+      - { type: damage_dealt, value: "-20%", condition: "while standing" }
+      - { type: damage_taken, value: "yes", condition: "wearing divine amulet" }
+
+  - name: "Bane of the Wicked"
+    tags: [combat, undead_slayer, daedra_slayer, werewolf_slayer]
+    description: "You are an enemy to all things abhorrent. Deal 20% more damage to undead, daedra and werewolves. However, do 10% less damage to other beings."
+    effects:
+      - {
+          type: damage_dealt,
+          scope: [undead, daedra, werewolves],
+          value: "+20%",
+        }
+      - { type: damage_dealt, scope: "other beings", value: "-10%" }
+
+  - name: "Blighted Fists"
+    tags: [unarmed, combat, disease]
+    description: "Your afflictions fuel your fury! Your unarmed attacks deal +10 unresistable disease damage to targets without disease immunity."
+    effects:
+      - {
+          type: unarmed_damage,
+          damage_type: disease,
+          value: "+10",
+          note: "unresistable",
+        }
+
+  - name: "Blood Warrior"
+    tags: [combat, defense, health, scaling, vulnerability]
+    description: "You take 50% more physical damage and have 50% weakness to Magicka. However you start with +50 health and gain +5 health per level."
+    effects:
+      - { type: physical_damage_taken, value: "+50%" }
+      - { type: magic_weakness, value: "50%" }
+      - { type: health_bonus, value: "+50 starting, +5 per level" }
+
+  - name: "Bulwark"
+    tags: [defense, armor, damage_reflect]
+    description: "When walking or standing still, you gain 200 armor rating and reflect 10% physical damage. You drain 1 additional stamina per second while sprinting and 0.25 when running."
+    effects:
+      - {
+          type: armor_rating,
+          value: "+200",
+          condition: "walking or standing still",
+        }
+      - {
+          type: damage_reflect,
+          value: "10% physical",
+          condition: "walking or standing still",
+        }
+      - { type: stamina_drain, value: "+1/sec sprinting, +0.25/sec running" }
+
+  - name: "Defiler"
+    tags: [combat, undead, debuff]
+    description: "The only use you have for the living is to resurrect them in death. Deal 20% more damage to playable races. However, do 10% less damage to other beings."
+    effects:
+      - { type: damage_dealt, scope: "playable races", value: "+20%" }
+      - { type: damage_dealt, scope: "other beings", value: "-10%" }
+
+  - name: "Disbeliever"
+    tags: [crafting, combat, divine_penalty]
+    description: "You reject the influence of gods, placing your faith in logic and reason instead. Dwemer weapons and armor are 33% stronger, but you cannot receive blessings from shrines or divines."
+    effects:
+      - {
+          type: gear_effectiveness,
+          scope: [dwemer_weapon, dwemer_armor],
+          value: "+33%",
+        }
+      - { type: divine_blessings, value: "cannot receive" }
+
+  - name: "Disciplined"
+    tags: [archery, combat, debuff]
+    description: "Shoot to kill. Bows and crossbows deal 20% more damage. However, they draw/reload 25% slower."
+    effects:
+      - { type: ranged_damage, scope: [bow, crossbow], value: "+20%" }
+      - {
+          type: ranged_speed,
+          scope: [bow_draw, crossbow_reload],
+          value: "-25%",
+        }
+
+  - name: "Dominating Will"
+    tags: [magic, social, debuff]
+    description: "Your presence commands fear, intimidation checks almost always succeed, and frenzy spells are 20% stronger. However, your persuasive charm is lacking, making persuasion checks harder, and your pacifying spells are 20% weaker."
+    effects:
+      - { type: intimidation_success, value: "almost always" }
+      - { type: spell_power, scope: frenzy, value: "+20%" }
+      - { type: persuasion_success, value: "decreased" }
+      - { type: spell_power, scope: pacify, value: "-20%" }
+
+  - name: "Dovah Tinvaak"
+    tags: [shout, debuff]
+    description: "You are fluent in Dragon speech and as such can shout 10% more often, at 20% reduced effectiveness."
+    effects:
+      - { type: shout_cooldown, value: "-10%" }
+      - { type: shout_effectiveness, value: "-20%" }
+
+  - name: "Druid"
+    tags: [magic, nature, vulnerability]
+    description: "Druids are attuned to nature, making spriggans friendly and reducing the cost of druidic spells by up to 30%. You can craft Lifebloom Essence from Taproot and Spriggan Sap for powerful regeneration. However, your bond with the wild leaves you 25% more vulnerable to fire and axes."
+    effects:
+      - { type: creature_relation, scope: spriggan, value: "friendly" }
+      - { type: spell_cost, scope: druidic, value: "-30%" }
+      - {
+          type: crafting_unlock,
+          value: "Lifebloom Essence from Taproot and Spriggan Sap",
+        }
+      - { type: damage_weakness, scope: [fire, axe], value: "+25%" }
+
+  - name: "Elemental Conduit"
+    tags: [magic, destruction, weather]
+    description: "Fire spells are more powerful in sunny weather but lose potency in the rain. \nShock spells are enhanced during rain but are less effective in snowy conditions. \nFrost spells excel in snowy weather but weaken under sunny skies."
+    effects:
+      - {
+          type: spell_power,
+          scope: fire,
+          value: "increased",
+          condition: "sunny weather",
+        }
+      - {
+          type: spell_power,
+          scope: fire,
+          value: "decreased",
+          condition: "rainy weather",
+        }
+      - {
+          type: spell_power,
+          scope: shock,
+          value: "increased",
+          condition: "rainy weather",
+        }
+      - {
+          type: spell_power,
+          scope: shock,
+          value: "decreased",
+          condition: "snowy weather",
+        }
+      - {
+          type: spell_power,
+          scope: frost,
+          value: "increased",
+          condition: "snowy weather",
+        }
+      - {
+          type: spell_power,
+          scope: frost,
+          value: "decreased",
+          condition: "sunny weather",
+        }
+
+  - name: "Fast Shot"
+    tags: [archery, combat, debuff]
+    description: "You'd rather shoot fast than shoot hard. Bows draw 30% faster, crossbows reload 30% faster. However, bows and crossbows deal 30% less damage."
+    effects:
+      - { type: ranged_speed, scope: bow, value: "+30%" }
+      - { type: ranged_speed, scope: crossbow, value: "+30%" }
+      - { type: ranged_damage, scope: [bow, crossbow], value: "-30%" }
+
+  - name: "Fatal Attraction"
+    tags: [combat, social]
+    description: "Your presence is as dangerous as it is alluring. You can choose one gender, you deal 20% more physical damage to the selected gender, but in turn, take 20% more from the other."
+    effects:
+      - { type: player_choice, scope: "gender for bonus/penalty" }
+      - {
+          type: physical_damage_dealt,
+          value: "+20%",
+          condition: "vs chosen gender",
+        }
+      - {
+          type: physical_damage_taken,
+          value: "+20%",
+          condition: "from other gender",
+        }
+
+  - name: "Focused"
+    tags: [magic, survival, debuff]
+    description: "When in danger, you think before acting. When at less than 20% health, you regenerate 5 magicka per second and absorb 10% of incoming spells. However, you take 10% more damage when below this threshold."
+    effects:
+      - { type: magicka_regen, value: "+5/sec", condition: "20% health" }
+      - { type: spell_absorption, value: "10%", condition: "20% health" }
+      - { type: damage_taken, value: "+10%", condition: "20% health" }
+
+  - name: "Focused Precision"
+    tags: [archery, combat]
+    description: "Your reliance on careful aim comes at a cost. Arrows and bolts deal 15% less damage, but have a 20% chance to push targets away. The strength of this pushback scales with your Marksman skill."
+    effects:
+      - { type: ranged_damage, scope: [arrow, bolt], value: "-15%" }
+      - { type: knockback_chance, value: "20%", scope: [arrow, bolt] }
+      - { type: knockback_power, value: "scales with Marksman" }
+
+  - name: "Gambler"
+    tags: [combat, crit, debuff]
+    description: "You go in all or nothing. Gain 50% chance to critical hit. However, overall weapon damage is reduced by 40%. When you land a critical hit, your attacks do 10% more damage for 30 seconds (stackable up to 5 times)."
+    effects:
+      - { type: crit_chance, value: "+50%" }
+      - { type: weapon_damage, value: "-40%" }
+      - {
+          type: damage_dealt,
+          value: "+10%",
+          duration: "30s",
+          stacks: 5,
+          condition: "on critical hit",
+        }
+
+  - name: "Giantkin"
+    tags: [combat, magic, debuff]
+    description: "Descended from the mighty giants; you gain 10% magic resistance and damage with blunt weapons, however you cannot read skill books, or use scrolls and staves."
+    effects:
+      - { type: magic_resistance, value: "+10%" }
+      - { type: weapon_damage, scope: blunt, value: "+10%" }
+      - {
+          type: restriction,
+          value: "cannot use skill books, scrolls, or staves",
+        }
+
+  - name: "Glutton"
+    tags: [alchemy, food, debuff]
+    description: "You LOVE food but hate medicine. Food benefits are 25% stronger but potions have only 50% their efficiency."
+    effects:
+      - { type: food_effect, value: "+25%" }
+      - { type: potion_effect, value: "-50%" }
+
+  - name: "Good Natured"
+    tags: [combat, magic, divine_bonus]
+    description: "You have a good heart. Deal 20% less damage with weapons and Destruction spells. However, while wearing an amulet of the divines beneficial spells and potions last 20% longer and you take 20% less damage."
+    effects:
+      - { type: damage_dealt, scope: [weapon, destruction], value: "-20%" }
+      - {
+          type: beneficial_effect_duration,
+          value: "+20%",
+          condition: "wearing divine amulet",
+        }
+      - {
+          type: damage_taken,
+          value: "-20%",
+          condition: "wearing divine amulet",
+        }
+
+  - name: "Hoarder"
+    tags: [utility, carry_weight, trade, debuff]
+    description: "You love carrying stuff around, even if it's junk. Gain +200 carryweight. Selling prices are 50% worse."
+    effects:
+      - { type: carry_weight, value: "+200" }
+      - { type: selling_prices, value: "-50%" }
+
+  - name: "Homeowner"
+    tags: [utility, economy]
+    description: "You've secured a place to call your own, choosing one of Skyrim's fine homes to settle in. However, comfort comes at a cost: each week, you must make a mortgage payment based on the home's value."
+    effects:
+      - { type: home_ownership, value: "enabled" }
+      - { type: weekly_cost, value: "based on home value" }
+
+  - name: "Introvert"
+    tags: [combat, scaling]
+    description: "You thrive in solitude but falter in the crowd. When facing three or fewer enemies, you deal 15% more damage, whether with weapons or Destruction magic. Against four or more, your nerves get the better of you, and you deal 10% less."
+    effects:
+      - { type: damage_dealt, value: "+15%", condition: "≤3 enemies" }
+      - { type: damage_dealt, value: "-10%", condition: "≥4 enemies" }
+
+  - name: "Jack of All Spells"
+    tags: [magic, scaling]
+    description: "But master of none. Novice, Apprentice and Adept spells are 20% stronger or longer lasting, expert and master spells are 20% weaker or shorter."
+    effects:
+      - {
+          type: spell_effectiveness,
+          scope: [novice, apprentice, adept],
+          value: "+20%",
+        }
+      - { type: spell_effectiveness, scope: [expert, master], value: "-20%" }
+
+  - name: "King of Worms"
+    tags: [magic, necromancy, summon, debuff]
+    description: "You've gained hidden insight into necromantic arts. You can have 1 additional summon or undead thrall. However, the duration of summon and resurrecting spells is reduced by 33%."
+    effects:
+      - { type: max_summons, value: "+1" }
+      - { type: summon_duration, value: "-33%" }
+
+  - name: "Light Foot"
+    tags: [stealth, movement, fall_damage]
+    description: "You've never felt comfortable in footwear. When not wearing boots/shoes, your movement is muffled, you move 5% faster and suffer no fall damage. When wearing boots/shoes you move 10% slower."
+    effects:
+      - { type: movement, value: "muffled", condition: "no boots" }
+      - { type: move_speed, value: "+5%", condition: "no boots" }
+      - { type: fall_damage, value: "negated", condition: "no boots" }
+      - { type: move_speed, value: "-10%", condition: "wearing boots" }
+
+  - name: "Lurker"
+    tags: [stealth, combat, food]
+    description: "When not wearing any clothes sneak attacks deal 2.5 times more damage and can sneak 25% better. Eating fish when it's raw and wriggling triggers a powerful healing effect that lasts 10 minutes. However, armor provides no protection, cooked food offers no benefits, and weapons with a weight above 10 will deal no damage."
+    effects:
+      - {
+          type: sneak_attack_multiplier,
+          value: "x2.5",
+          condition: "no clothes",
+        }
+      - { type: sneak_skill, value: "+25%", condition: "no clothes" }
+      - {
+          type: healing_effect,
+          value: "powerful",
+          duration: "10m",
+          condition: "eating raw fish",
+        }
+      - { type: restriction, scope: armor, value: "no protection" }
+      - { type: restriction, scope: "cooked food", value: "no benefits" }
+      - {
+          type: restriction,
+          scope: "heavy weapons",
+          value: "no damage above weight 10",
+        }
+
+  - name: "Marathon Runner"
+    tags: [movement, stamina, debuff]
+    description: "You regenerate 5 stamina per second while sprinting. However, you will not be able to gain any stamina while running or standing still."
+    effects:
+      - { type: stamina_regen, value: "+5/sec", condition: "while sprinting" }
+      - {
+          type: stamina_regen,
+          value: "0",
+          condition: "while running or standing",
+        }
+
+  - name: "Master of Destiny"
+    tags: [utility, perks, skills]
+    description: "You reject the influence of fate and star signs. Standing Stones cannot be used, but you begin the game with 3 additional perk points and a permanent +5 boost to all skills."
+    effects:
+      - { type: standing_stones, value: "cannot use" }
+      - { type: perk_points, value: "+3 starting" }
+      - { type: all_skills, value: "+5 permanent" }
+
+  - name: "Nosferatu"
+    tags: [social, debuff, survival]
+    description: "You're an ugly sight and live in the sewers. -50 speech, no health, magicka or stamina regen outdoors. Eating skeever meat gives you a 20% speed boost and restores 10 health, magicka and stamina per second for 180 seconds."
+    effects:
+      - { type: speech, value: "-50" }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "0",
+          condition: "outdoors",
+        }
+      - {
+          type: buff_on_food,
+          scope: "skeever meat",
+          effects:
+            [
+              { type: move_speed, value: "+20%" },
+              {
+                type: resource_regen,
+                scope: [health, magicka, stamina],
+                value: "+10/sec",
+                duration: "180s",
+              },
+            ],
+        }
+
+  - name: "Old Fashioned"
+    tags: [combat, crafting]
+    description: "If it ain't broke, don't fix it. Weapons, armor and magical staves made of iron, wood, steel, fur or hide are 15% stronger. Otherwise, they are 10% weaker."
+    effects:
+      - {
+          type: item_effectiveness,
+          scope: [iron, wood, steel, fur, hide],
+          value: "+15%",
+        }
+      - { type: item_effectiveness, scope: "other materials", value: "-10%" }
+
+  - name: "Pacifist"
+    tags: [regen, combat, utility]
+    description: "When your arms are lowered you restore 2 magicka and stamina per second. However, raising your hands in combat will have the opposite effect. Those born under the sign of the Atronach do not gain any benefits."
+    effects:
+      - { type: magicka_regen, value: "+2/sec", condition: "arms lowered" }
+      - { type: stamina_regen, value: "+2/sec", condition: "arms lowered" }
+      - {
+          type: resource_drain,
+          value: "M/S drain",
+          condition: "arms raised in combat",
+        }
+
+  - name: "Phalanx"
+    tags: [combat, vulnerability]
+    description: "You deal 15% more damage with spears, javelins, pikes, and halberds. However, you take 50% more damage when hit from behind. Also gives you a unique pike."
+    effects:
+      - {
+          type: weapon_damage,
+          scope: [spear, javelin, pike, halberd],
+          value: "+15%",
+        }
+      - { type: damage_taken, value: "+50%", condition: "hit from behind" }
+      - { type: equipment_bonus, value: "unique pike" }
+
+  - name: "Rage"
+    tags: [combat, survival, movement]
+    description: "You posses a natural fight response. When at less than 20% health, you deal 20% more damage and take 20% less damage. However, you move 30% slower when below this threshold."
+    effects:
+      - { type: damage_dealt, value: "+20%", condition: "20% health" }
+      - { type: damage_taken, value: "-20%", condition: "20% health" }
+      - { type: move_speed, value: "-30%", condition: "20% health" }
+
+  - name: "Serene Presence"
+    tags: [social, magic]
+    description: "Your calming aura makes you effortlessly persuasive: persuasion checks almost always succeed, and pacifying spells are 20% stronger. However, your intimidation attempts are half as likely to succeed, and your frenzy spells are 20% weaker."
+    effects:
+      - { type: persuasion_success, value: "almost always" }
+      - { type: spell_power, scope: pacify, value: "+20%" }
+      - { type: intimidation_success, value: "halved" }
+      - { type: spell_power, scope: frenzy, value: "-20%" }
+
+  - name: "Shehai"
+    tags: [combat, magic, vulnerability]
+    description: "Your bound weapons do 15% more damage. But you take 25% more damage from the undead."
+    effects:
+      - { type: weapon_damage, scope: bound, value: "+15%" }
+      - { type: damage_taken, scope: undead, value: "+25%" }
+
+  - name: "Silent Dovah"
+    tags: [attribute_bonus, scaling, divine_penalty]
+    description: "You choose not to speak the Thu'um, instead hoarding the souls of slain dragons to fuel your own power. For each unspent dragon soul, you gain +10 Health, Magicka, and Stamina. However, this draconic strength rejects the curse of beast or blood: werewolves and vampires cannot harness its power."
+    effects:
+      - {
+          type: attribute_bonus,
+          scope: [health, magicka, stamina],
+          value: "+10 per unspent dragon soul",
+        }
+      - { type: restriction, value: "cannot be werewolf or vampire" }
+
+  - name: "Skilled"
+    tags: [utility, skill_gain, perks, debuff]
+    description: "Reading skill books grants an extra skill point and trainers cost 50% less, however every 5 levels you don't gain a perk point."
+    effects:
+      - { type: skill_book_bonus, value: "+1 skill point" }
+      - { type: trainer_cost, value: "-50%" }
+      - { type: perk_point_gain, value: "none every 5 levels" }
+
+  - name: "Soul Embed"
+    tags: [shout, dragon]
+    description: "At will, you can consume a dragon soul to amplify the magnitude of your shouts by 50% for 1 hour."
+    effects:
+      - {
+          type: shout_power,
+          value: "+50%",
+          duration: "1h",
+          cost: "1 dragon soul",
+        }
+
+  - name: "Soul Reaver"
+    tags: [enchanting, combat, debuff]
+    description: "You've claimed countless souls for your gain. Weapon and armor enchantments are 10% stronger and use 10% less charge. Armor rating and weapon damage is reduced by 10%."
+    effects:
+      - { type: enchantment_strength, value: "+10%" }
+      - { type: enchantment_cost, value: "-10%" }
+      - { type: armor_rating, value: "-10%" }
+      - { type: weapon_damage, value: "-10%" }
+
+  - name: "Sunkissed"
+    tags: [magic, vulnerability]
+    description: "You draw strength from the sun's radiant blaze: sun spells are 15% more powerful in your hands. But such warmth comes at a cost: you take 25% more frost damage, and this weakness deepens to 50% beneath the cold veil of night."
+    effects:
+      - { type: spell_power, scope: sun, value: "+15%" }
+      - { type: frost_weakness, value: "+25%", condition: "daytime" }
+      - { type: frost_weakness, value: "+50%", condition: "nighttime" }
+
+  - name: "Swimmer"
+    tags: [utility, regen, movement]
+    description: "You prefer life on the water. In water, you swim 30% faster, can breath underwater and regenerate health, stamina and magicka by a flat 1 per second. On land, you suffer 25% less health, stamina and magicka regeneration."
+    effects:
+      - { type: swim_speed, value: "+30%", condition: "in water" }
+      - { type: waterbreathing, value: "true", condition: "in water" }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "+1/sec",
+          condition: "in water",
+        }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "-25%",
+          condition: "on land",
+        }
+
+  - name: "Touch of the Arcane"
+    tags: [magic, debuff]
+    description: "Your touch and cloak spells are 20% stronger. All other spell types are 10% weaker or last 10% less."
+    effects:
+      - { type: spell_power, scope: [touch, cloak], value: "+20%" }
+      - { type: spell_power, scope: "other spells", value: "-10%" }
+
+  - name: "Unbound Hands"
+    tags: [magic, unarmed, combat]
+    description: "Handwear constricts you. Spells are 15% stronger and unarmed attacks do +30 more damage when not wearing gloves/gauntlets. However, they suffer the opposite effect when wearing gloves/gauntlets."
+    effects:
+      - { type: spell_power, value: "+15%", condition: "no gloves" }
+      - { type: unarmed_damage, value: "+30", condition: "no gloves" }
+      - { type: penalty, value: "opposite effect", condition: "wearing gloves" }
+
+  - name: "Unshakable"
+    tags: [combat, defense, movement]
+    description: "You turn defense into offense. Your shield bashes deal 20% more damage and cost 20% less Stamina. However, your unwavering focus on your shield makes you slower while blocking."
+    effects:
+      - { type: shield_bash_damage, value: "+20%" }
+      - { type: shield_bash_cost, value: "-20%" }
+      - { type: move_speed, value: "reduced", condition: "while blocking" }
+
+  - name: "Wandering Monk"
+    tags: [combat, armor]
+    description: "Power attacks with quarterstaves will force the enemy to drop their weapon to the ground, however this only applies if you're not wearing any armor (light or heavy). You also recieve a unique battlestaff."
+    effects:
+      - {
+          type: weapon_disarm,
+          scope: quarterstaff,
+          value: "on power attack",
+          condition: "no armor",
+        }
+      - { type: equipment_bonus, value: "unique battlestaff" }
+
+  - name: "Way of the Voice"
+    tags: [shout, pacifist]
+    description: "You follow the pacifist creed of the Greybeards, and as such your hostile shouts are 30% less effective, but using non-hostile shouts has a 20% chance reset the shout cooldown."
+    effects:
+      - { type: shout_power, scope: hostile, value: "-30%" }
+      - { type: shout_reset_chance, scope: "non-hostile", value: "20%" }
+
+  - name: "Witcher"
+    tags: [alchemy, potions, debuff]
+    description: "Potions and poisons you craft are 20% more effective, and consuming raw ingredients grants double the effect. However, you can only benefit from up to four active potion effects at a time."
+    effects:
+      - {
+          type: alchemy_effectiveness,
+          scope: [potions, poisons],
+          value: "+20%",
+        }
+      - { type: ingredient_effect, value: "x2" }
+      - { type: max_potion_effects, value: "4" }
+
+  - name: "Wizard's Wardrobe"
+    tags: [magic, equipment]
+    description: "Your wands are 30% more effective when wearing a wizard hat. When not wearing a wizard hat, all spells are 10% less powerful or last 10% less."
+    effects:
+      - {
+          type: wand_effectiveness,
+          value: "+30%",
+          condition: "wearing wizard hat",
+        }
+      - {
+          type: spell_power,
+          value: "-10%",
+          condition: "not wearing wizard hat",
+        }

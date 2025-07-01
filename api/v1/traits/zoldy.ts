@@ -28,7 +28,7 @@ const loadTraits = () => {
       process.cwd(),
       "data",
       "traits",
-      "traits.yaml"
+      "traits-2.yaml"
     );
     console.log("Loading traits from:", traitsFilePath);
     const traitsFileContent = fs.readFileSync(traitsFilePath, "utf8");
