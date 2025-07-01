@@ -1,0 +1,156 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Trait Tagging Rules
+
+This document outlines the process for converting trait data from JSON format to a tagged YAML structure.
+
+## CRITICAL REQUIREMENTS
+
+1. **Name Preservation**
+   - The `name` field MUST be copied exactly as it appears in the source JSON
+   - No modifications, reformatting, or changes are allowed
+
+2. **Description Preservation**
+   - The `description` field MUST be copied exactly as it appears in the source JSON
+   - No condensing, reformatting, or changes are allowed
+   - Preserve all original formatting, including quotes and special characters
+
+## Input Format (JSON)
+
+```json
+{
+  "name": "Trait Name",
+  "description": "Description with <numeric> values and effects"
+}
+```
+
+## Output Format (YAML)
+
+```yaml
+  - name: "Trait Name"  # Exact copy from JSON
+    tags: [tag1, tag2, tag3]
+    description: "Description with <numeric> values and effects"  # Exact copy from JSON
+    effects:
+      - {
+          type: effect_type,
+          scope: effect_scope,
+          value: "numeric_value",
+          condition: "optional_condition"
+        }
+```
+
+## Tag Categories
+
+Common tags to consider when analyzing trait descriptions:
+
+1. **Combat Related**
+   - `combat` - General combat abilities
+   - `damage` - Direct damage modifications
+   - `crit` - Critical hit effects
+   - `archery` - Bow/ranged related
+   - `unarmed` - Bare-handed combat
+
+2. **Magic Related**
+   - `magic` - General magic abilities
+   - `destruction` - Destruction magic
+   - `shout` - Dragon shout related
+   - `summon` - Conjuration/summoning
+
+3. **Attributes & Stats**
+   - `attribute_bonus` - Direct stat increases
+   - `scaling` - Level-based scaling
+   - `regen` - Regeneration effects
+
+4. **Utility & Movement**
+   - `movement` - Speed/mobility effects
+   - `stealth` - Sneaking/stealth
+   - `utility` - General utility effects
+   - `carry_weight` - Inventory related
+
+5. **Penalties & Restrictions**
+   - `debuff` - Negative effects
+   - `divine_penalty` - Divine/religious restrictions
+   - `vulnerability` - Increased damage taken
+
+6. **Crafting & Skills**
+   - `alchemy` - Potion/poison crafting
+   - `crafting` - General crafting
+   - `skills` - Skill-related effects
+
+## Effect Extraction Rules
+
+1. **Value Extraction**
+   - Extract numeric values from `<>` brackets
+   - Convert to standardized format with units
+   - Example: `<20%>` becomes `"+20%"`
+
+2. **Effect Types**
+   - `spell_power` - Spell effectiveness
+   - `damage_dealt` - Damage output
+   - `damage_taken` - Damage received
+   - `move_speed` - Movement speed
+   - `attribute_bonus` - Stat bonuses
+   - `resource_regen` - Resource regeneration
+
+3. **Scope Definition**
+   - Specific weapon types: `[bow, crossbow]`
+   - Magic schools: `[fire, frost, shock]`
+   - Resources: `[health, magicka, stamina]`
+   - Conditions: `"while standing"`, `"in water"`
+
+## Example Transformation
+
+Input JSON:
+```json
+{
+  "name": "Swimmer",
+  "description": "You prefer life on the water. In water, you swim <30%> faster, can breath underwater and regenerate health, stamina and magicka by a flat <1> per second. On land, you suffer <25%> less health, stamina and magicka regeneration."
+}
+```
+
+Output YAML:
+```yaml
+  - name: "Swimmer"  # Exact copy
+    tags: [utility, regen, movement]
+    description: "You prefer life on the water. In water, you swim <30%> faster, can breath underwater and regenerate health, stamina and magicka by a flat <1> per second. On land, you suffer <25%> less health, stamina and magicka regeneration."  # Exact copy
+    effects:
+      - { type: swim_speed, value: "+30%", condition: "in water" }
+      - { type: waterbreathing, value: "true", condition: "in water" }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "+1/sec",
+          condition: "in water",
+        }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "-25%",
+          condition: "on land",
+        }
+```
+
+## Best Practices
+
+1. **Name and Description Handling**
+   - ALWAYS copy name and description fields exactly as they appear in JSON
+   - Do not modify, condense, or rewrite these fields
+   - Preserve all original punctuation and formatting
+
+2. **Tag Selection**
+   - Choose 2-4 most relevant tags
+   - Order from most to least significant
+   - Include both benefits and penalties
+
+3. **Effect Structure**
+   - Break complex effects into separate entries
+   - Group related effects when possible
+   - Include conditions that trigger effects
+
+4. **Value Standardization**
+   - Use consistent units
+   - Include signs for increases/decreases
+   - Specify duration units when applicable
