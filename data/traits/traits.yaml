@@ -1,0 +1,310 @@
+traits:
+  - name: Acoustic Arcanist
+    tags: [magic, social, debuff]
+    description: "Empowers sonic spells after playing music, at cost of social and physical prowess."
+    effects:
+      - {
+          type: spell_power,
+          scope: sonic,
+          value: "+20%",
+          condition: "after playing instrument",
+        }
+      - { type: follower_cost, value: "increased" }
+      - { type: physical_damage_dealt, value: "-15%" }
+
+  - name: Addict
+    tags: [alchemy, buff, debuff, combat]
+    description: "Enhanced substance effects, but suffers withdrawal when sober."
+    effects:
+      - { type: buff_duration, scope: [skooma, alcohol], value: "x2" }
+      - { type: crafting_unlock, value: "skooma at cooking pot" }
+      - {
+          type: stagger_chance_on_hit,
+          value: "25%",
+          condition: "not under skooma/alcohol effect",
+        }
+
+  - name: Adrenaline Rush
+    tags: [combat, survival, movement, debuff]
+    description: "A fight-or-flight response granting speed at low health, but reducing damage."
+    effects:
+      - { type: move_speed, value: "+20%", condition: "<20% health" }
+      - { type: stamina_regen, value: "+1/sec", condition: "<20% health" }
+      - { type: damage_dealt, value: "-30%", condition: "<20% health" }
+
+  - name: Au Naturel
+    tags: [attribute_bonus, scaling, defense]
+    description: "Massive base stats that decrease with each piece of armor worn."
+    effects:
+      - {
+          type: attribute_bonus,
+          scope: [health, magicka, stamina],
+          value: "+100",
+        }
+      - {
+          type: attribute_penalty,
+          scope: [health, magicka, stamina],
+          value: "-40 per piece",
+          max: "-160",
+        }
+      - {
+          type: attribute_per_level,
+          scope: [health, magicka, stamina],
+          value: "+1 per empty armor slot",
+        }
+
+  - name: Bad Natured
+    tags: [stealth, combat, debuff, divine_penalty]
+    description: "Stronger while sneaking, weaker while standing. Rejects the divines."
+    effects:
+      - { type: damage_dealt, value: "+20%", condition: "while crouched" }
+      - { type: pickpocket_success, value: "increased" }
+      - { type: damage_dealt, value: "-20%", condition: "while standing" }
+      - { type: damage_taken, value: "yes", condition: "wearing divine amulet" }
+
+  - name: Bane of the Wicked
+    tags: [combat, undead_slayer, daedra_slayer, werewolf_slayer]
+    description: "Deals bonus damage to monstrous creatures, but less to others."
+    effects:
+      - {
+          type: damage_dealt,
+          scope: [undead, daedra, werewolves],
+          value: "+20%",
+        }
+      - { type: damage_dealt, scope: "other beings", value: "-10%" }
+
+  - name: Blighted Fists
+    tags: [unarmed, combat, disease]
+    description: "Unarmed attacks deal extra, unresistable disease damage."
+    effects:
+      - {
+          type: unarmed_damage,
+          damage_type: disease,
+          value: "+10",
+          note: "unresistable",
+        }
+
+  - name: Blood Warrior
+    tags: [combat, defense, health, scaling, vulnerability]
+    description: "Gains significant health per level but is highly vulnerable to all damage."
+    effects:
+      - { type: physical_damage_taken, value: "+50%" }
+      - { type: magic_weakness, value: "50%" }
+      - { type: health_bonus, value: "+50 starting, +5 per level" }
+
+  - name: Bulwark
+    tags: [defense, armor, damage_reflect]
+    description: "Gains massive armor and reflects damage when stationary, but tires faster."
+    effects:
+      - {
+          type: armor_rating,
+          value: "+200",
+          condition: "walking or standing still",
+        }
+      - {
+          type: damage_reflect,
+          value: "10% physical",
+          condition: "walking or standing still",
+        }
+      - { type: stamina_drain, value: "+1/sec sprinting, +0.25/sec running" }
+
+  - name: Disbeliever
+    tags: [crafting, combat, divine_penalty]
+    description: "Rejects gods, empowering Dwemer gear but forfeiting divine blessings."
+    effects:
+      - {
+          type: gear_effectiveness,
+          scope: [dwemer_weapon, dwemer_armor],
+          value: "+33%",
+        }
+      - { type: divine_blessings, value: "cannot receive" }
+
+  - name: Disciplined
+    tags: [archery, combat, debuff]
+    description: "Deals more damage with bows but draws and reloads them much slower."
+    effects:
+      - { type: ranged_damage, scope: [bow, crossbow], value: "+20%" }
+      - {
+          type: ranged_speed,
+          scope: [bow_draw, crossbow_reload],
+          value: "-40%",
+        }
+
+  - name: Dovah Tinvaak
+    tags: [shout, debuff]
+    description: "Can shout more often, but the shouts are weaker."
+    effects:
+      - { type: shout_cooldown, value: "-10%" }
+      - { type: shout_effectiveness, value: "-20%" }
+
+  - name: Elemental Conduit
+    tags: [magic, destruction, weather]
+    description: "Elemental spell power changes based on the weather."
+    effects:
+      - {
+          type: spell_power,
+          scope: fire,
+          value: "increased",
+          condition: "sunny weather",
+        }
+      - {
+          type: spell_power,
+          scope: fire,
+          value: "decreased",
+          condition: "rainy weather",
+        }
+      - {
+          type: spell_power,
+          scope: shock,
+          value: "increased",
+          condition: "rainy weather",
+        }
+      - {
+          type: spell_power,
+          scope: shock,
+          value: "decreased",
+          condition: "snowy weather",
+        }
+      - {
+          type: spell_power,
+          scope: frost,
+          value: "increased",
+          condition: "snowy weather",
+        }
+      - {
+          type: spell_power,
+          scope: frost,
+          value: "decreased",
+          condition: "sunny weather",
+        }
+
+  - name: Fatal Attraction
+    tags: [combat, social]
+    description: "Deal more damage to one gender, but take more from the other."
+    effects:
+      - { type: player_choice, scope: "gender for bonus/penalty" }
+      - {
+          type: physical_damage_dealt,
+          value: "+20%",
+          condition: "vs chosen gender",
+        }
+      - {
+          type: physical_damage_taken,
+          value: "+20%",
+          condition: "from other gender",
+        }
+
+  - name: Gambler
+    tags: [combat, crit, debuff]
+    description: "Massive critical hit chance, but very low base damage."
+    effects:
+      - { type: crit_chance, value: "+50%" }
+      - { type: weapon_damage, value: "-40%" }
+      - {
+          type: damage_dealt,
+          value: "+10%",
+          duration: 30s,
+          stacks: 5,
+          condition: "on critical hit",
+        }
+
+  - name: Hoarder
+    tags: [utility, carry_weight, trade, debuff]
+    description: "Vastly increased carry weight at the cost of terrible selling prices."
+    effects:
+      - { type: carry_weight, value: "+200" }
+      - { type: selling_prices, value: "-50%" }
+
+  - name: King of Worms
+    tags: [magic, necromancy, summon, debuff]
+    description: "Allows an additional summon, but all summons have reduced duration."
+    effects:
+      - { type: max_summons, value: "+1" }
+      - { type: summon_duration, value: "-33%" }
+
+  - name: Light Foot
+    tags: [stealth, movement, fall_damage]
+    description: "Faster and safer when barefoot, but slower when wearing shoes."
+    effects:
+      - { type: movement, value: "muffled", condition: "no boots" }
+      - { type: move_speed, value: "+5%", condition: "no boots" }
+      - { type: fall_damage, value: "negated", condition: "no boots" }
+      - { type: move_speed, value: "-10%", condition: "wearing boots" }
+
+  - name: Master of Destiny
+    tags: [utility, perks, skills]
+    description: "Rejects fate, gaining perks and skills but losing access to Standing Stones."
+    effects:
+      - { type: standing_stones, value: "cannot use" }
+      - { type: perk_points, value: "+3 starting" }
+      - { type: all_skills, value: "+5 permanent" }
+
+  - name: Pacifist
+    tags: [regen, combat, utility]
+    description: "Regenerates resources with arms down, but drains them when raised for combat."
+    effects:
+      - { type: magicka_regen, value: "+2/sec", condition: "arms lowered" }
+      - { type: stamina_regen, value: "+2/sec", condition: "arms lowered" }
+      - {
+          type: resource_drain,
+          value: "M/S drain",
+          condition: "arms raised in combat",
+        }
+
+  - name: Silent Dovah
+    tags: [attribute_bonus, scaling, divine_penalty]
+    description: "Hoards dragon souls for power, but cannot be a vampire or werewolf."
+    effects:
+      - {
+          type: attribute_bonus,
+          scope: [health, magicka, stamina],
+          value: "+10 per unspent dragon soul",
+        }
+      - { type: restriction, value: "cannot be werewolf or vampire" }
+
+  - name: Skilled
+    tags: [utility, skill_gain, perks, debuff]
+    description: "Excels at learning but gains perk points less frequently."
+    effects:
+      - { type: skill_book_bonus, value: "+1 skill point" }
+      - { type: trainer_cost, value: "-50%" }
+      - { type: perk_point_gain, value: "none every 5 levels" }
+
+  - name: Swimmer
+    tags: [utility, regen, movement]
+    description: "Thrives in water with enhanced mobility and regeneration, but is weaker on land."
+    effects:
+      - { type: swim_speed, value: "+30%", condition: "in water" }
+      - { type: waterbreathing, value: "true", condition: "in water" }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "+1/sec",
+          condition: "in water",
+        }
+      - {
+          type: resource_regen,
+          scope: [health, magicka, stamina],
+          value: "-25%",
+          condition: "on land",
+        }
+
+  - name: Unbound Hands
+    tags: [magic, unarmed, combat]
+    description: "Empowered spells and unarmed attacks without gloves, but penalized with them."
+    effects:
+      - { type: spell_power, value: "+15%", condition: "no gloves" }
+      - { type: unarmed_damage, value: "+30", condition: "no gloves" }
+      - { type: penalty, value: "opposite effect", condition: "wearing gloves" }
+
+  - name: Witcher
+    tags: [alchemy, potions, debuff]
+    description: "Master alchemist who can only sustain a few potion effects at once."
+    effects:
+      - {
+          type: alchemy_effectiveness,
+          scope: [potions, poisons],
+          value: "+20%",
+        }
+      - { type: ingredient_effect, value: "x2" }
+      - { type: max_potion_effects, value: "4" }
