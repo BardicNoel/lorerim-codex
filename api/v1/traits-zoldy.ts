@@ -5,6 +5,9 @@ import * as fs from "fs";
 import * as path from "path";
 import * as yaml from "js-yaml";
 const DEFAULT_LIMIT = 5;
+const MAX_LIMIT = 20;
+const MIN_QUERY_LENGTH = 2;
+const MAX_QUERY_LENGTH = 50;
 
 interface Trait {
   name: string;
@@ -20,6 +23,31 @@ interface Trait {
     note?: string;
   }>;
 }
+
+// Sanitize search query to prevent injection and invalid patterns
+const sanitizeSearchQuery = (query: string): string => {
+  // Remove special Fuse.js operators and potential harmful characters
+  return query
+    .replace(/['"\\]/g, "") // Remove quotes and backslashes
+    .replace(/[!<>=/]/g, "") // Remove Fuse.js operators
+    .trim();
+};
+
+// Validate search parameters
+const validateSearchParams = (params: SearchParams): string | null => {
+  // Check query lengths
+  for (const [key, value] of Object.entries(params)) {
+    if (value && typeof value === "string") {
+      if (value.length < MIN_QUERY_LENGTH) {
+        return `${key} must be at least ${MIN_QUERY_LENGTH} characters long`;
+      }
+      if (value.length > MAX_QUERY_LENGTH) {
+        return `${key} must not exceed ${MAX_QUERY_LENGTH} characters`;
+      }
+    }
+  }
+  return null;
+};
 
 // Load and parse the YAML file
 const loadTraits = () => {
@@ -63,7 +91,7 @@ const createFuseInstance = (
         weight: config.weight,
       })),
     threshold: 0.3,
-    useExtendedSearch: true,
+    useExtendedSearch: false, // Disable extended search to prevent complex patterns
     ignoreLocation: true,
     findAllMatches: true,
   });
@@ -79,6 +107,7 @@ interface SearchParams {
   tags?: string;
   effects?: string;
   limit?: number;
+  [key: string]: string | number | undefined; // Add index signature
 }
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
@@ -100,15 +129,29 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       effects: req.query.effects as string,
     };
 
-    // Parse limit parameter, use DEFAULT_LIMIT if not specified
-    const limit = req.query.limit
+    // Validate all search parameters
+    const validationError = validateSearchParams(params);
+    if (validationError) {
+      return res.status(400).json({ error: validationError });
+    }
+
+    // Sanitize all search parameters
+    Object.keys(params).forEach((key) => {
+      const value = params[key];
+      if (value && typeof value === "string") {
+        params[key] = sanitizeSearchQuery(value);
+      }
+    });
+
+    // Parse and validate limit parameter
+    const requestedLimit = req.query.limit
       ? parseInt(req.query.limit as string, 10)
       : DEFAULT_LIMIT;
-    if (isNaN(limit) || limit < 1) {
-      return res
-        .status(400)
-        .json({ error: "Invalid limit parameter: must be a positive number" });
-    }
+
+    const limit = Math.min(
+      Math.max(1, requestedLimit), // Ensure minimum of 1
+      MAX_LIMIT // Cap at maximum limit
+    );
 
     // Check if at least one search parameter is provided
     if (
@@ -191,6 +234,9 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     });
   } catch (error) {
     console.error("Error processing request:", error);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({
+      error: "Internal server error",
+      message: "An error occurred while processing your request",
+    });
   }
 }
