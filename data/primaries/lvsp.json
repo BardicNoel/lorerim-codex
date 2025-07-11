@@ -1,0 +1,2232 @@
+[
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x02010F6C",
+      "globalFormId": "0x02010F6C",
+      "plugin": "Dawnguard.esm",
+      "stackOrder": 2,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x02010F6B",
+      "globalFormId": "0x02010F6B",
+      "plugin": "Dawnguard.esm",
+      "stackOrder": 2,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x02010F6A",
+      "globalFormId": "0x02010F6A",
+      "plugin": "Dawnguard.esm",
+      "stackOrder": 2,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05147D9E",
+      "globalFormId": "0x0B147D9E",
+      "plugin": "ccbgssse067-daedinv.esm",
+      "stackOrder": 64,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x39000955",
+      "globalFormId": "0xFE037955",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04000955",
+      "globalFormId": "0xFE037955",
+      "plugin": "ccvsvsse003-necroarts.esl",
+      "stackOrder": 67,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x39000956",
+      "globalFormId": "0xFE037956",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04000956",
+      "globalFormId": "0xFE037956",
+      "plugin": "ccvsvsse003-necroarts.esl",
+      "stackOrder": 67,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105101",
+      "globalFormId": "0x00105101",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105101",
+      "globalFormId": "0x00105101",
+      "plugin": "Unofficial Skyrim Special Edition Patch.esp",
+      "stackOrder": 85,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105101",
+      "globalFormId": "0x00105101",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x001050FE",
+      "globalFormId": "0x001050FE",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x001050FE",
+      "globalFormId": "0x001050FE",
+      "plugin": "Unofficial Skyrim Special Edition Patch.esp",
+      "stackOrder": 85,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x001050FE",
+      "globalFormId": "0x001050FE",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0280BF2B",
+      "globalFormId": "0x1580BF2B",
+      "plugin": "Requiem - Clockwork.esp",
+      "stackOrder": 1761,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0580BF2B",
+      "globalFormId": "0x1580BF2B",
+      "plugin": "Clockwork.esp",
+      "stackOrder": 115,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0203D474",
+      "globalFormId": "0x0403D474",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x040279EA",
+      "globalFormId": "0x040279EA",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x020279EA",
+      "globalFormId": "0x040279EA",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04023F6B",
+      "globalFormId": "0x04023F6B",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x02023F6B",
+      "globalFormId": "0x04023F6B",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0201E8B0",
+      "globalFormId": "0x0401E8B0",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0201E8AF",
+      "globalFormId": "0x0401E8AF",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0201E8AD",
+      "globalFormId": "0x0401E8AD",
+      "plugin": "Dragonborn.esm",
+      "stackOrder": 4,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB40",
+      "globalFormId": "0x2158AB40",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB41",
+      "globalFormId": "0x2158AB41",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB42",
+      "globalFormId": "0x2158AB42",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB43",
+      "globalFormId": "0x2158AB43",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB7A",
+      "globalFormId": "0x2158AB7A",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB7B",
+      "globalFormId": "0x2158AB7B",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB7C",
+      "globalFormId": "0x2158AB7C",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0758AB7D",
+      "globalFormId": "0x2158AB7D",
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "stackOrder": 157,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0010FE1C",
+      "globalFormId": "0x0010FE1C",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0010A249",
+      "globalFormId": "0x0010A249",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00109AE0",
+      "globalFormId": "0x00109AE0",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00109ADF",
+      "globalFormId": "0x00109ADF",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00109ADE",
+      "globalFormId": "0x00109ADE",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00109ADE",
+      "globalFormId": "0x00109ADE",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0010554D",
+      "globalFormId": "0x0010554D",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0010554D",
+      "globalFormId": "0x0010554D",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105104",
+      "globalFormId": "0x00105104",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105104",
+      "globalFormId": "0x00105104",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105103",
+      "globalFormId": "0x00105103",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105103",
+      "globalFormId": "0x00105103",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105102",
+      "globalFormId": "0x00105102",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105102",
+      "globalFormId": "0x00105102",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105100",
+      "globalFormId": "0x00105100",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00105100",
+      "globalFormId": "0x00105100",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x001050FF",
+      "globalFormId": "0x001050FF",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x001050FF",
+      "globalFormId": "0x001050FF",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00100E74",
+      "globalFormId": "0x00100E74",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00100E74",
+      "globalFormId": "0x00100E74",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020259",
+      "globalFormId": "0x00020259",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020259",
+      "globalFormId": "0x00020259",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020258",
+      "globalFormId": "0x00020258",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020258",
+      "globalFormId": "0x00020258",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020258",
+      "globalFormId": "0x00020258",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020257",
+      "globalFormId": "0x00020257",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020257",
+      "globalFormId": "0x00020257",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00020257",
+      "globalFormId": "0x00020257",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00044C5A",
+      "globalFormId": "0x00044C5A",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00044C59",
+      "globalFormId": "0x00044C59",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00039D40",
+      "globalFormId": "0x00039D40",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00039D40",
+      "globalFormId": "0x00039D40",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00039D3F",
+      "globalFormId": "0x00039D3F",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0002430C",
+      "globalFormId": "0x0002430C",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0002430C",
+      "globalFormId": "0x0002430C",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0002430C",
+      "globalFormId": "0x0002430C",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0002430B",
+      "globalFormId": "0x0002430B",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0002430B",
+      "globalFormId": "0x0002430B",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00024309",
+      "globalFormId": "0x00024309",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x00024309",
+      "globalFormId": "0x00024309",
+      "plugin": "Skyrim.esm",
+      "stackOrder": 0,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04B6BD47",
+      "globalFormId": "0x2CB6BD47",
+      "plugin": "EasierRidersDungeonPackSSE.esp",
+      "stackOrder": 199,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x044101A2",
+      "globalFormId": "0x2D4101A2",
+      "plugin": "Tools of Kagrenac.esp",
+      "stackOrder": 209,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x044101A3",
+      "globalFormId": "0x2D4101A3",
+      "plugin": "Tools of Kagrenac.esp",
+      "stackOrder": 209,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x040B32D0",
+      "globalFormId": "0x300B32D0",
+      "plugin": "Undeath.esp",
+      "stackOrder": 213,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000800",
+      "globalFormId": "0xFE6CC800",
+      "plugin": "WildwakerMagic - Distribution.esp",
+      "stackOrder": 1891,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000800",
+      "globalFormId": "0xFE6CC800",
+      "plugin": "AncientBloodII - Distribution.esp",
+      "stackOrder": 438,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000801",
+      "globalFormId": "0xFE6CC801",
+      "plugin": "WildwakerMagic - Distribution.esp",
+      "stackOrder": 1891,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000801",
+      "globalFormId": "0xFE6CC801",
+      "plugin": "AncientBloodII - Distribution.esp",
+      "stackOrder": 438,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000802",
+      "globalFormId": "0xFE6CC802",
+      "plugin": "WildwakerMagic - Distribution.esp",
+      "stackOrder": 1891,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000802",
+      "globalFormId": "0xFE6CC802",
+      "plugin": "AncientBloodII - Distribution.esp",
+      "stackOrder": 438,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF1",
+      "globalFormId": "0xFE53CCF1",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF2",
+      "globalFormId": "0xFE53CCF2",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF3",
+      "globalFormId": "0xFE53CCF3",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF4",
+      "globalFormId": "0xFE53CCF4",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF5",
+      "globalFormId": "0xFE53CCF5",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x06000CF0",
+      "globalFormId": "0xFE53CCF0",
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "stackOrder": 1454,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07093536",
+      "globalFormId": "0x8D093536",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07186585",
+      "globalFormId": "0x8D186585",
+      "plugin": "Fozars_Dragonborn_-_Requiem_Patch.esp",
+      "stackOrder": 1788,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x030009D0",
+      "globalFormId": "0x8F0009D0",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0009D0",
+      "globalFormId": "0x8F0009D0",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0009D1",
+      "globalFormId": "0x8F0009D1",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0009FE",
+      "globalFormId": "0x8F0009FE",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0009FF",
+      "globalFormId": "0x8F0009FF",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000A00",
+      "globalFormId": "0x8F000A00",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x030008DB",
+      "globalFormId": "0x8F0008DB",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008DB",
+      "globalFormId": "0x8F0008DB",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x030008DF",
+      "globalFormId": "0x8F0008DF",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008DF",
+      "globalFormId": "0x8F0008DF",
+      "plugin": "Requiem_VampireCollection.esp",
+      "stackOrder": 1805,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A592D6F",
+      "globalFormId": "0x8C592D6F",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A592D6F",
+      "globalFormId": "0x8C592D6F",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x040008F8",
+      "globalFormId": "0x900008F8",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008F8",
+      "globalFormId": "0x900008F8",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008F9",
+      "globalFormId": "0x900008F9",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008FA",
+      "globalFormId": "0x900008FA",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x040008FB",
+      "globalFormId": "0x900008FB",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008FB",
+      "globalFormId": "0x900008FB",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0008FC",
+      "globalFormId": "0x900008FC",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04000944",
+      "globalFormId": "0x90000944",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000944",
+      "globalFormId": "0x90000944",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000945",
+      "globalFormId": "0x90000945",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04000947",
+      "globalFormId": "0x90000947",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000947",
+      "globalFormId": "0x90000947",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000948",
+      "globalFormId": "0x90000948",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B000949",
+      "globalFormId": "0x90000949",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0400094A",
+      "globalFormId": "0x9000094A",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B00094A",
+      "globalFormId": "0x9000094A",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04005A91",
+      "globalFormId": "0x90005A91",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B005A91",
+      "globalFormId": "0x90005A91",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0241D1",
+      "globalFormId": "0x900241D1",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0241D2",
+      "globalFormId": "0x900241D2",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B0241D3",
+      "globalFormId": "0x900241D3",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024205",
+      "globalFormId": "0x90024205",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024205",
+      "globalFormId": "0x90024205",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024206",
+      "globalFormId": "0x90024206",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024206",
+      "globalFormId": "0x90024206",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024208",
+      "globalFormId": "0x90024208",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024208",
+      "globalFormId": "0x90024208",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024209",
+      "globalFormId": "0x90024209",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024209",
+      "globalFormId": "0x90024209",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0402420F",
+      "globalFormId": "0x9002420F",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B02420F",
+      "globalFormId": "0x9002420F",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024211",
+      "globalFormId": "0x90024211",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024211",
+      "globalFormId": "0x90024211",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024212",
+      "globalFormId": "0x90024212",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024212",
+      "globalFormId": "0x90024212",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024214",
+      "globalFormId": "0x90024214",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024214",
+      "globalFormId": "0x90024214",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024215",
+      "globalFormId": "0x90024215",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04024216",
+      "globalFormId": "0x90024216",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B024216",
+      "globalFormId": "0x90024216",
+      "plugin": "Requiem-general_NPC_tweaks.esp",
+      "stackOrder": 1809,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A592D70",
+      "globalFormId": "0x8C592D70",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A67B8E0",
+      "globalFormId": "0x8C67B8E0",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A67B8E1",
+      "globalFormId": "0x8C67B8E1",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0A67B8E2",
+      "globalFormId": "0x8C67B8E2",
+      "plugin": "Requiem.esp",
+      "stackOrder": 1752,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x47384F45",
+      "globalFormId": "0x91384F45",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x470BBF06",
+      "globalFormId": "0x910BBF06",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x47384F40",
+      "globalFormId": "0x91384F40",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x47384F44",
+      "globalFormId": "0x91384F44",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x47384F42",
+      "globalFormId": "0x91384F42",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x47384F3F",
+      "globalFormId": "0x91384F3F",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x470BBF12",
+      "globalFormId": "0x910BBF12",
+      "plugin": "Trad_AE_CC_Collection_Requiem_Patch.esp",
+      "stackOrder": 1832,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07000801",
+      "globalFormId": "0xFE6B6801",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07000802",
+      "globalFormId": "0xFE6B6802",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07000803",
+      "globalFormId": "0xFE6B6803",
+      "plugin": "MR - Enemy Magic Expansion - Small Tweaks Patch.esp",
+      "stackOrder": 1867,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000891",
+      "globalFormId": "0x94000891",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000892",
+      "globalFormId": "0x94000892",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000893",
+      "globalFormId": "0x94000893",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000894",
+      "globalFormId": "0x94000894",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C0008B9",
+      "globalFormId": "0x940008B9",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C0008BA",
+      "globalFormId": "0x940008BA",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C0008BB",
+      "globalFormId": "0x940008BB",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C0008BC",
+      "globalFormId": "0x940008BC",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C0008BD",
+      "globalFormId": "0x940008BD",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000901",
+      "globalFormId": "0x94000901",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000903",
+      "globalFormId": "0x94000903",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A3A",
+      "globalFormId": "0x94000A3A",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A3B",
+      "globalFormId": "0x94000A3B",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A3C",
+      "globalFormId": "0x94000A3C",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A3D",
+      "globalFormId": "0x94000A3D",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A78",
+      "globalFormId": "0x94000A78",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A79",
+      "globalFormId": "0x94000A79",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A7A",
+      "globalFormId": "0x94000A7A",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A7B",
+      "globalFormId": "0x94000A7B",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000A7C",
+      "globalFormId": "0x94000A7C",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AA6",
+      "globalFormId": "0x94000AA6",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AA7",
+      "globalFormId": "0x94000AA7",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AA8",
+      "globalFormId": "0x94000AA8",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AA9",
+      "globalFormId": "0x94000AA9",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AD0",
+      "globalFormId": "0x94000AD0",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AD1",
+      "globalFormId": "0x94000AD1",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000AD2",
+      "globalFormId": "0x94000AD2",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000ADB",
+      "globalFormId": "0x94000ADB",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C05",
+      "globalFormId": "0x94000C05",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C0F",
+      "globalFormId": "0x94000C0F",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C14",
+      "globalFormId": "0x94000C14",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C15",
+      "globalFormId": "0x94000C15",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C16",
+      "globalFormId": "0x94000C16",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C17",
+      "globalFormId": "0x94000C17",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C18",
+      "globalFormId": "0x94000C18",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C000C19",
+      "globalFormId": "0x94000C19",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C005D52",
+      "globalFormId": "0x94005D52",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C005D53",
+      "globalFormId": "0x94005D53",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0C005D54",
+      "globalFormId": "0x94005D54",
+      "plugin": "Requiem Magic Redone - Enemy Magic Expansion.esp",
+      "stackOrder": 1866,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05182137",
+      "globalFormId": "0x95182137",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B182137",
+      "globalFormId": "0x95182137",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05182138",
+      "globalFormId": "0x95182138",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B182138",
+      "globalFormId": "0x95182138",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05182141",
+      "globalFormId": "0x95182141",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B182141",
+      "globalFormId": "0x95182141",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0519656B",
+      "globalFormId": "0x9519656B",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B19656B",
+      "globalFormId": "0x9519656B",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x051AFA90",
+      "globalFormId": "0x951AFA90",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B1AFA90",
+      "globalFormId": "0x951AFA90",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x051AFA91",
+      "globalFormId": "0x951AFA91",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B1AFA91",
+      "globalFormId": "0x951AFA91",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x051AFA92",
+      "globalFormId": "0x951AFA92",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B1AFA92",
+      "globalFormId": "0x951AFA92",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x051AFA93",
+      "globalFormId": "0x951AFA93",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B1AFA93",
+      "globalFormId": "0x951AFA93",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": false
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07000830",
+      "globalFormId": "0xFE6BA830",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x07000831",
+      "globalFormId": "0xFE6BA831",
+      "plugin": "Requiem - More Unique Enemies - Magic Redone Addon.esp",
+      "stackOrder": 1872,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B182139",
+      "globalFormId": "0x95182139",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0B1B4BB6",
+      "globalFormId": "0x951B4BB6",
+      "plugin": "Requiem - More Unique Enemies.esp",
+      "stackOrder": 1871,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0500081A",
+      "globalFormId": "0xFE75681A",
+      "plugin": "FireTonguedDaedroth_Integration.esp",
+      "stackOrder": 2035,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x04000802",
+      "globalFormId": "0xFE7D3802",
+      "plugin": "BIG [REDACTED] BOSS (BFB).esp",
+      "stackOrder": 2166,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05000858",
+      "globalFormId": "0xFE860858",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x05000859",
+      "globalFormId": "0xFE860859",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0500085A",
+      "globalFormId": "0xFE86085A",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0500085B",
+      "globalFormId": "0xFE86085B",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0500085C",
+      "globalFormId": "0xFE86085C",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  },
+  {
+    "meta": {
+      "type": "LVSP",
+      "formId": "0x0500085D",
+      "globalFormId": "0xFE86085D",
+      "plugin": "MoiraFollowerMod.esp",
+      "stackOrder": 2307,
+      "isWinner": true
+    }
+  }
+]
